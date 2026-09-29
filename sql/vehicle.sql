@@ -16,7 +16,7 @@ cursor.execute("""
         FOREIGN KEY (driver_id) 
             REFERENCES tblUsers(driver_id) -- Foreign key constraint referencing the taxi drivers info table
 
-        )
+        ) 
 
 
     )
