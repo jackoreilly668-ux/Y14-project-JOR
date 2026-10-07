@@ -10,6 +10,8 @@ cursor.execute("""
         mot_expiry_date TEXT NOT NULL, -- MOT expiry date for the vehicle
         insurance_expiry_date TEXT NOT NULL, -- Insurance expiry date for the vehicle
         car_model TEXT NOT NULL, -- Car model (required)
+        car-color TEXT NOT NULL, -- Car color (required)
+        driver_id INTEGER NOT NULL, -- Driver ID (optional, can be NULL if no driver is assigned)
         seat_capacity INTEGER NOT NULL, -- Set seat capacity for the vehicle
         car_tax_expiry_date TEXT NOT NULL, -- Car tax expiry date for the vehicle
        
@@ -19,8 +21,7 @@ cursor.execute("""
         ) 
 
 
-    )
+""") 
 
 
-
-""") -- create the bookings table if it doesn't exist
+""" -- create the bookings table if it doesn't exist
